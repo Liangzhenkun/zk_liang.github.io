@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruce Liang - 学术个人网站</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔬</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- 预加载字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </label>
+    </div>
+
+    <div class="language-switch">
+        <button id="zh-btn" class="active">中文</button>
+        <button id="en-btn">EN</button>
+    </div>
+    
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="images/placeholder.svg" alt="Bruce Liang" id="profile-img">
+                </div>
+                <h1 class="name">Bruce Liang</h1>
+                <p class="title">Ph.D. 学生 at 浙江大学</p>
+                
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>杭州, 中国</span>
+                </div>
+                
+                <div class="contact-icons">
+                    <a href="mailto:bruceliang@example.com" class="icon-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/bruceliang" class="icon-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=bruceliang" class="icon-link" title="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://www.xiaohongshu.com/user/profile/Bruce_liang" class="icon-link" title="小红书">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about" class="nav-link active"><i class="fas fa-user"></i> 关于我</a></li>
+                    <li><a href="#research" class="nav-link"><i class="fas fa-flask"></i> 研究方向</a></li>
+                    <li><a href="#publications" class="nav-link"><i class="fas fa-book"></i> 期刊论文</a></li>
+                    <li><a href="#proceedings" class="nav-link"><i class="fas fa-microphone"></i> 会议论文</a></li>
+                    <li><a href="#working-papers" class="nav-link"><i class="fas fa-file-alt"></i> 工作论文</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-code-branch"></i> 项目</a></li>
+                    <li><a href="#lifestyle" class="nav-link"><i class="fas fa-terminal"></i> Me time Record</a></li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <p class="quote">"交叉学科探索者"</p>
+            </div>
+        </aside>
+        
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <header class="header">
+                <h1>Bruce Liang</h1>
+                <div class="header-decoration"></div>
+            </header>
+            
+            <section id="about" class="section">
+                <h2 class="section-title">关于我 <span class="title-decoration"></span></h2>
+                <div class="about-content">
+                    <p class="greeting">你好! 我是 <span class="highlight">Bruce Liang</span>。<span class="emoji">👋</span></p>
+                    <p>我目前在<span class="highlight">浙江大学</span>攻读数智创新管理博士学位，我的导师是 <a href="#" class="link">WJ</a> 教授。</p>
+                    <p>在此之前，我曾在浙江大学 <a href="#" class="link">LeadLab</a> 完成应用心理学硕士学位，师从 <a href="#" class="link">LZG</a> 教授。我的本科毕业于江南大学土木工程专业。</p>
+                    
+                    <div class="academic-info">
+                        <div class="info-card">
+                            <h3><i class="fas fa-university"></i> 教育背景</h3>
+                            <ul>
+                                <li><strong>博士</strong> - 浙江大学 - 数智创新管理 (在读)</li>
+                                <li><strong>硕士</strong> - 浙江大学 - 应用心理学 (2020)</li>
+                                <li><strong>学士</strong> - 江南大学 - 土木工程 (2016)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3><i class="fas fa-briefcase"></i> 经历</h3>
+                            <ul>
+                                <li><strong>浙江大学 LeadLab</strong> - 研究生 (2018-2020)</li>
+                                <li><strong>浙江大学</strong> - 博士研究生 (2021-至今)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="research" class="section">
+                <h2 class="section-title">研究方向 <span class="title-decoration"></span></h2>
+                <p class="section-intro">我的研究跨越组织行为学、创新战略管理和计算社会科学领域。特别关注以下研究方向：</p>
+                
+                <div class="research-interests">
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="interest-content">
+                            <h3>计算社会科学</h3>
+                            <p>运用计算方法和大数据分析技术研究社会科学问题，结合定量与定性方法探索组织行为和社会现象。</p>
+                            <div class="tags">
+                                <span class="tag">大数据分析</span>
+                                <span class="tag">社会网络分析</span>
+                                <span class="tag">文本挖掘</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="interest-content">
+                            <h3>AI-agent与仿真建模</h3>
+                            <p>利用人工智能代理和仿真建模技术模拟组织行为和社会互动，研究复杂系统中的涌现现象。</p>
+                            <div class="tags">
+                                <span class="tag">多智能体系统</span>
+                                <span class="tag">仿真模型</span>
+                                <span class="tag">复杂系统</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="interest-content">
+                            <h3>组织行为与创新管理</h3>
+                            <p>研究组织中的人际互动、领导力发展和创新行为，探索数字化转型背景下的组织创新战略。</p>
+                            <div class="tags">
+                                <span class="tag">组织行为学</span>
+                                <span class="tag">创新战略</span>
+                                <span class="tag">领导力研究</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-container">
+                    <h3 class="skills-title">技能与工具</h3>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <span class="skill-name">数据分析</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">仿真建模</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">计算社会科学方法</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">人工智能应用</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="publications" class="section">
+                <h2 class="section-title">期刊论文 <span class="title-decoration"></span></h2>
+                <div class="publications-filter">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="2024">2024</button>
+                    <button class="filter-btn" data-filter="2023">2023</button>
+                </div>
+                
+                <div class="publications-container">
+                    <div class="publication-item" data-year="2023" data-type="journal">
+                        <div class="publication-year">2023</div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">
+                                <a href="#" target="_blank">探索大语言模型在社会科学研究中的应用与伦理挑战</a>
+                                <span class="paper-badge">Journal</span>
+                            </h3>
+                            <p class="publication-authors">
+                                <span class="author self">Bruce Liang</span>, 某某某, 某某.
+                            </p>
+                            <div class="publication-links">
+                                <a href="#" class="pub-link" title="PDF"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <button class="abstract-toggle"><i class="fas fa-chevron-down"></i> 摘要</button>
+                            </div>
+                            <div class="publication-abstract hidden">
+                                <p>本文对大语言模型在社会科学研究中的应用前景进行了全面分析，同时深入探讨了相关的伦理挑战和解决方案。研究指出了语言模型在分析社会现象、模拟人类行为和辅助理论构建方面的潜力，并提出了减轻潜在偏见和确保研究伦理的方法。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="citation-info">
+                    <p class="note">* 表示共同第一作者</p>
+                </div>
+            </section>
+            
+            <section id="proceedings" class="section">
+                <h2 class="section-title">会议论文 <span class="title-decoration"></span></h2>
+                <div class="publications-filter">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="2024">2024</button>
+                    <button class="filter-btn" data-filter="2023">2023</button>
+                </div>
+                
+                <div class="publications-container">
+                    <div class="publication-item" data-year="2024" data-type="conference">
+                        <div class="publication-year">2024</div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">
+                                <a href="#" target="_blank">AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios</a>
+                                <span class="paper-badge">Preprint</span>
+                            </h3>
+                            <p class="publication-authors">
+                                <span class="author self">Bruce Liang*</span>, Jingcong Liang*, Jiayu Lin*, Xinnong Zhang*, Xiawei Liu, Shiyue Yang, Rong Ye, Lei Chen, Haoyu Kuang, Xuanjing Huang, Zhongyu Wei.
+                            </p>
+                            <div class="publication-links">
+                                <a href="#" class="pub-link" title="PDF"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="pub-link" title="Code"><i class="fas fa-code"></i> 代码</a>
+                                <a href="#" class="pub-link" title="Dataset"><i class="fas fa-database"></i> 数据集</a>
+                                <a href="#" class="pub-link" title="Demo"><i class="fas fa-play-circle"></i> 演示</a>
+                                <button class="abstract-toggle"><i class="fas fa-chevron-down"></i> 摘要</button>
+                            </div>
+                            <div class="publication-abstract hidden">
+                                <p>本文提出了一个面向语言智能体社会智能的基准测试框架，通过交互式场景评估大语言模型在社交场景中的表现能力。主要贡献包括设计了一系列互动场景，建立了多维度评估指标，并分析了当前语言模型在社会智能方面的能力与局限。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-item" data-year="2024" data-type="conference">
+                        <div class="publication-year">2024</div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">
+                                <a href="#" target="_blank">Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation</a>
+                                <span class="paper-badge">ACL-Findings</span>
+                            </h3>
+                            <p class="publication-authors">
+                                <span class="author self">Bruce Liang</span>, Zhongyu Wei, Xuanjing Huang.
+                            </p>
+                            <div class="publication-links">
+                                <a href="#" class="pub-link" title="PDF"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="pub-link" title="Code"><i class="fas fa-code"></i> 代码</a>
+                                <button class="abstract-toggle"><i class="fas fa-chevron-down"></i> 摘要</button>
+                            </div>
+                            <div class="publication-abstract hidden">
+                                <p>本研究探索了基于智能体的大规模社会运动模拟方法，提出了一种新的框架来揭示社会运动中的真相并促进变革。我们构建了一个多智能体系统，能够模拟大规模社会互动和信息传播过程，为理解社会动态提供了新的计算方法。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="citation-info">
+                    <p class="note">* 表示共同第一作者</p>
+                </div>
+            </section>
+            
+            <section id="working-papers" class="section">
+                <h2 class="section-title">工作论文 <span class="title-decoration"></span></h2>
+                <div class="working-papers-container">
+                    <div class="working-paper-item">
+                        <div class="working-paper-content">
+                            <h3 class="working-paper-title">
+                                <a href="#" target="_blank">组织创新中的领导者角色：一个多层次分析框架</a>
+                                <span class="paper-badge">进行中</span>
+                            </h3>
+                            <p class="working-paper-desc">
+                                本研究探讨组织创新过程中领导者所扮演的多重角色，通过多层次分析框架，揭示领导行为如何在不同层面影响团队创新表现。预计完成时间：2024年底。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="working-paper-item">
+                        <div class="working-paper-content">
+                            <h3 class="working-paper-title">
+                                <a href="#" target="_blank">数字化转型中的组织学习机制：来自中国企业的证据</a>
+                                <span class="paper-badge">进行中</span>
+                            </h3>
+                            <p class="working-paper-desc">
+                                基于对中国企业的实证研究，本文分析在数字化转型过程中，组织如何通过不同的学习机制来应对外部环境变化并重构内部能力。预计完成时间：2024年9月。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects" class="section">
+                <h2 class="section-title">项目 <span class="title-decoration"></span></h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-sitemap project-icon"></i>
+                            <h3>组织行为仿真系统</h3>
+                        </div>
+                        <p class="project-desc">基于多智能体的组织行为仿真系统，模拟不同领导风格和组织结构对创新行为的影响。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">多智能体</span>
+                            <span class="tech-tag">仿真模型</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> 代码库</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> 演示</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-comments project-icon"></i>
+                            <h3>社会网络分析平台</h3>
+                        </div>
+                        <p class="project-desc">针对组织内部社交网络的分析平台，可视化关键人物影响力和信息流动路径。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">社会网络分析</span>
+                            <span class="tech-tag">数据可视化</span>
+                            <span class="tech-tag">图算法</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> 代码库</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-drone project-icon"></i>
+                            <h3>航拍摄影集</h3>
+                        </div>
+                        <p class="project-desc">个人航拍作品集，记录中国各地自然风光和城市景观，结合剪辑技术呈现独特视角。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">航拍</span>
+                            <span class="tech-tag">摄影</span>
+                            <span class="tech-tag">视频剪辑</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-image"></i> 作品集</a>
+                            <a href="#" class="project-link"><i class="fab fa-youtube"></i> 视频</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="lifestyle" class="section">
+                <h2 class="section-title">Me time Record <span class="title-decoration"></span></h2>
+                <div class="code-style-header">
+                    <pre><code><span class="code-comment">/**
+ * @author: Bruce Liang
+ * @description: 学术之外的数字足迹
+ * @version: 1.0.0
+ */</span></code></pre>
+                </div>
+                
+                <div class="lifestyle-container">
+                    <div class="lifestyle-tabs">
+                        <button class="tab-btn active" data-tab="reading">阅读笔记</button>
+                        <button class="tab-btn" data-tab="photography">摄影集</button>
+                        <button class="tab-btn" data-tab="collection">收藏阁</button>
+                        <button class="tab-btn" data-tab="coding">代码笔记</button>
+                        <button class="tab-btn" data-tab="moments">日常记录</button>
+                    </div>
+                    
+                    <div class="tab-content" id="reading">
+                        <div class="reading-grid">
+                            <div class="reading-card">
+                                <div class="book-cover">
+                                    <img src="images/placeholder.svg" alt="图书封面">
+                                </div>
+                                <div class="reading-content">
+                                    <h3>《人类简史》</h3>
+                                    <p class="author"><em>尤瓦尔·赫拉利</em></p>
+                                    <p class="reading-notes">在数字化时代，人类如何保持自我认知与社会联结？赫拉利从宏观历史视角揭示了人类发展的关键转折点，启发我思考技术与人文的平衡。</p>
+                                    <div class="reading-date"><span class="tag-time">2023年11月</span></div>
+                                </div>
+                            </div>
+                            
+                            <div class="reading-card">
+                                <div class="book-cover">
+                                    <img src="images/placeholder.svg" alt="图书封面">
+                                </div>
+                                <div class="reading-content">
+                                    <h3>《深度工作》</h3>
+                                    <p class="author"><em>卡尔·纽波特</em></p>
+                                    <p class="reading-notes">在信息爆炸的时代，专注力成为稀缺资源。如何在碎片化时代保持深度思考能力，这本书给了我很多启发，特别是对研究工作的时间管理方法。</p>
+                                    <div class="reading-date"><span class="tag-time">2024年2月</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="more-btn">查看更多笔记 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="tab-content hidden" id="photography">
+                        <div class="photo-gallery">
+                            <div class="photo-item">
+                                <img src="images/placeholder.svg" alt="摄影作品">
+                                <div class="photo-overlay">
+                                    <h3>西湖晨曦</h3>
+                                    <p>杭州, 2023</p>
+                                </div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/placeholder.svg" alt="摄影作品">
+                                <div class="photo-overlay">
+                                    <h3>城市剪影</h3>
+                                    <p>上海, 2022</p>
+                                </div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/placeholder.svg" alt="摄影作品">
+                                <div class="photo-overlay">
+                                    <h3>山间小道</h3>
+                                    <p>黄山, 2023</p>
+                                </div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="images/placeholder.svg" alt="摄影作品">
+                                <div class="photo-overlay">
+                                    <h3>海边日落</h3>
+                                    <p>厦门, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="more-btn">查看完整作品集 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="tab-content hidden" id="collection">
+                        <div class="collection-grid">
+                            <div class="collection-item">
+                                <div class="collection-image">
+                                    <img src="images/placeholder.svg" alt="收藏品">
+                                </div>
+                                <div class="collection-info">
+                                    <h3>业余无线电设备 <span class="badge">HAM Radio</span></h3>
+                                    <p>作为一名初级HAM爱好者（呼号: <code class="inline-code">BH1XXX</code>），我收集了几台手持和基地电台。业余无线电不仅是一种爱好，更是一种能连接世界的方式，特别是在自然灾害等紧急情况下。</p>
+                                    <div class="tag-container">
+                                        <span class="tech-tag">Yaesu FT-991A</span>
+                                        <span class="tech-tag">Baofeng UV-5R</span>
+                                        <span class="tech-tag">天线改装</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="collection-image">
+                                    <img src="images/placeholder.svg" alt="收藏品">
+                                </div>
+                                <div class="collection-info">
+                                    <h3>机械键盘收藏</h3>
+                                    <p>身为一个经常码字的研究生，好的输入设备极为重要。我收集了几把不同轴体的机械键盘，目前最喜欢的是带有茶轴的75%配列键盘，既满足编程需求又不占用过多桌面空间。</p>
+                                    <div class="tag-container">
+                                        <span class="tech-tag">HHKB Pro</span>
+                                        <span class="tech-tag">Keychron K2</span>
+                                        <span class="tech-tag">自定义键帽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="collection-image">
+                                    <img src="images/placeholder.svg" alt="收藏品">
+                                </div>
+                                <div class="collection-info">
+                                    <h3>古典黑胶唱片</h3>
+                                    <p>喜欢收集各个年代的经典黑胶唱片，感受不同时代的音乐魅力与质感。在忙碌的研究生活之余，黑胶唱片的温暖声音是放松心情的最佳方式。</p>
+                                    <div class="tag-container">
+                                        <span class="tech-tag">古典音乐</span>
+                                        <span class="tech-tag">Jazz</span>
+                                        <span class="tech-tag">70年代摇滚</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content hidden" id="coding">
+                        <div class="code-container">
+                            <div class="code-snippet">
+                                <div class="code-header">
+                                    <span class="language-badge">JavaScript</span>
+                                    <h3>前端入门笔记</h3>
+                                </div>
+                                <pre class="code-block"><code>// 学习React Hooks的基本用法
+import React, { useState, useEffect } from 'react';
+
+function DataFetchingComponent() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+    // 模拟数据获取
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://api.example.com/data');
+        const result = await response.json();
+        setData(result);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setLoading(false);
+      }
+    };
+    
+    fetchData();
+  }, []); // 空依赖数组表示仅在组件挂载时执行
+  
+  return (
+    &lt;div&gt;
+      {loading ? (
+        &lt;p&gt;Loading data...&lt;/p&gt;
+      ) : (
+        &lt;ul&gt;
+          {data.map(item => (
+            &lt;li key={item.id}&gt;{item.name}&lt;/li&gt;
+          ))}
+        &lt;/ul&gt;
+      )}
+    &lt;/div&gt;
+  );
+}</code></pre>
+                                <p class="code-notes">初学前端的点滴记录，正在入门React，学习过程中体会到了声明式UI的优势，以及函数式组件如何简化代码结构。作为一名PhD学生，业余时间学习编程既是兴趣，也是提升研究能力的方式。</p>
+                                <div class="code-meta"><span class="tag-time">更新于: 2024年3月</span></div>
+                            </div>
+
+                            <div class="code-snippet">
+                                <div class="code-header">
+                                    <span class="language-badge">Python</span>
+                                    <h3>研究数据处理脚本</h3>
+                                </div>
+                                <pre class="code-block"><code>import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# 数据可视化的一些实验
+def analyze_research_data(file_path):
+    """分析实验数据并生成图表"""
+    # 读取数据
+    df = pd.read_csv(file_path)
+    
+    # 数据清洗
+    df = df.dropna()
+    df = df[(df['reaction_time'] > 100) & (df['reaction_time'] < 3000)]
+    
+    # 基础统计
+    stats = df.groupby('condition').agg({
+        'reaction_time': ['mean', 'std', 'count']
+    })
+    
+    # 可视化
+    plt.figure(figsize=(10, 6))
+    sns.boxplot(x='condition', y='reaction_time', data=df)
+    plt.title('实验条件下的反应时间分布')
+    plt.tight_layout()
+    plt.savefig('reaction_time_by_condition.png')
+    
+    return stats
+
+# 使用示例
+if __name__ == "__main__":
+    results = analyze_research_data("experiment_data.csv")
+    print(results)</code></pre>
+                                <p class="code-notes">研究中经常需要处理大量数据，Python是我的得力助手。这段代码是我为行为实验数据分析创建的脚本，结合了pandas和seaborn进行数据处理和可视化。</p>
+                                <div class="code-meta"><span class="tag-time">更新于: 2024年1月</span></div>
+                            </div>
+                        </div>
+                        <a href="#" class="more-btn">查看更多代码 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="tab-content hidden" id="moments">
+                        <div class="moments-timeline">
+                            <div class="moment-item">
+                                <div class="moment-date">2024年4月</div>
+                                <div class="moment-content">
+                                    <div class="moment-image">
+                                        <img src="images/placeholder.svg" alt="生活瞬间">
+                                    </div>
+                                    <h3>学术会议间隙 <span class="location-tag"><i class="fas fa-map-marker-alt"></i> 北京</span></h3>
+                                    <p>在北京参加学术会议的间隙，抽空去了故宫博物院。文化的厚重感总能给我带来新的研究灵感。晚上和几位同领域的PhD学生交流，探讨了AI在社会科学研究中的伦理问题。</p>
+                                    <div class="moment-tags">
+                                        <span class="tag">#学术旅行</span>
+                                        <span class="tag">#文化探索</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="moment-item">
+                                <div class="moment-date">2024年3月</div>
+                                <div class="moment-content">
+                                    <div class="moment-image">
+                                        <img src="images/placeholder.svg" alt="生活瞬间">
+                                    </div>
+                                    <h3>前端学习始末 <span class="location-tag"><i class="fas fa-laptop-code"></i> 线上</span></h3>
+                                    <p>开始系统学习前端开发，报名了一个线上课程。虽然与我的研究方向有些距离，但编程思维对数据分析和模型构建很有帮助。周末时间完成了第一个小项目，成就感满满！</p>
+                                    <div class="moment-tags">
+                                        <span class="tag">#编程学习</span>
+                                        <span class="tag">#跨学科技能</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="moment-item">
+                                <div class="moment-date">2024年2月</div>
+                                <div class="moment-content">
+                                    <div class="moment-image">
+                                        <img src="images/placeholder.svg" alt="生活瞬间">
+                                    </div>
+                                    <h3>冬日咖啡馆 <span class="location-tag"><i class="fas fa-coffee"></i> 杭州</span></h3>
+                                    <p>在冬日的阳光下，找一家安静的咖啡馆，阅读一本好书，是最惬意的时光。今天尝试了手冲咖啡，品味那份宁静与专注的过程，与研究工作有异曲同工之妙。</p>
+                                    <div class="moment-tags">
+                                        <span class="tag">#阅读时光</span>
+                                        <span class="tag">#咖啡文化</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="more-btn">查看更多记录 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+            
+            <footer class="footer">
+                <p>&copy; 2024 Bruce Liang. 保留所有权利。</p>
+                <div class="contact-section">
+                    <h3>联系方式</h3>
+                    <p><i class="fas fa-envelope"></i> 邮箱: <a href="mailto:zk.liang@zju.edu.cn">zk.liang@zju.edu.cn</a></p>
+                    <p><i class="fab fa-weixin"></i> 微信: BruceLiang_ZJU</p>
+                    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/bruceliang" target="_blank">bruceliang</a></p>
+                    <p><i class="fab fa-instagram"></i> 小红书: <a href="https://www.xiaohongshu.com/user/profile/Bruce_liang" target="_blank">✨ Bruce_liang</a></p>
+                </div>
+                <p class="footer-note">本网站使用 <a href="https://html5up.net/" target="_blank">HTML5</a> 和 <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> 构建</p>
+                <p class="update-time">最后更新: <span id="last-update"></span></p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
