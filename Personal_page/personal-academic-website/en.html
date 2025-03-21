@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruce Liang - Academic Personal Website</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔬</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </label>
+    </div>
+
+    <div class="language-switch">
+        <button id="zh-btn">中文</button>
+        <button id="en-btn" class="active">EN</button>
+    </div>
+    
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="images/placeholder.svg" alt="Bruce Liang" id="profile-img">
+                </div>
+                <h1 class="name">Bruce Liang</h1>
+                <p class="title">Ph.D. Student at Zhejiang University</p>
+                
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Hangzhou, China</span>
+                </div>
+                
+                <div class="contact-icons">
+                    <a href="mailto:bruceliang@example.com" class="icon-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/bruceliang" class="icon-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=bruceliang" class="icon-link" title="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://twitter.com/bruceliang" class="icon-link" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about" class="nav-link active"><i class="fas fa-user"></i> About Me</a></li>
+                    <li><a href="#research" class="nav-link"><i class="fas fa-flask"></i> Research</a></li>
+                    <li><a href="#publications" class="nav-link"><i class="fas fa-book"></i> Publications</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-code-branch"></i> Projects</a></li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <p class="quote">"Interdisciplinary Explorer"</p>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1>Bruce Liang</h1>
+                <div class="header-decoration"></div>
+            </header>
+            
+            <section id="about" class="section">
+                <h2 class="section-title">About Me <span class="title-decoration"></span></h2>
+                <div class="about-content">
+                    <p class="greeting">Hello! I'm <span class="highlight">Bruce Liang</span>.<span class="emoji">👋</span></p>
+                    <p>I am currently pursuing a Ph.D. in Digital Innovation Management at <span class="highlight">Zhejiang University</span>, where I'm advised by Prof. <a href="#" class="link">WJ</a>.</p>
+                    <p>Previously, I completed my Master's degree in Applied Psychology at Zhejiang University in the <a href="#" class="link">LeadLab</a> under the guidance of Prof. <a href="#" class="link">LZG</a>. I received my Bachelor's degree in Civil Engineering from Jiangnan University.</p>
+                    
+                    <div class="academic-info">
+                        <div class="info-card">
+                            <h3><i class="fas fa-university"></i> Education</h3>
+                            <ul>
+                                <li><strong>Ph.D.</strong> - Zhejiang University - Digital Innovation Management (Current)</li>
+                                <li><strong>M.Sc.</strong> - Zhejiang University - Applied Psychology (2020)</li>
+                                <li><strong>B.Sc.</strong> - Jiangnan University - Civil Engineering (2016)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                            <ul>
+                                <li><strong>Zhejiang University LeadLab</strong> - Graduate Researcher (2018-2020)</li>
+                                <li><strong>Zhejiang University</strong> - Ph.D. Researcher (2021-Present)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="research" class="section">
+                <h2 class="section-title">Research Interests <span class="title-decoration"></span></h2>
+                <p class="section-intro">My work spans Organizational Behavior, Innovation Strategy Management, and Computational Social Science. I am particularly interested in the following research areas:</p>
+                
+                <div class="research-interests">
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="interest-content">
+                            <h3>Computational Social Science</h3>
+                            <p>Using computational methods and big data analytics to study social science problems, combining quantitative and qualitative approaches to explore organizational behavior and social phenomena.</p>
+                            <div class="tags">
+                                <span class="tag">Big Data Analysis</span>
+                                <span class="tag">Social Network Analysis</span>
+                                <span class="tag">Text Mining</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="interest-content">
+                            <h3>AI-agents & Simulation Modeling</h3>
+                            <p>Leveraging artificial intelligence agents and simulation modeling techniques to simulate organizational behavior and social interactions, studying emergent phenomena in complex systems.</p>
+                            <div class="tags">
+                                <span class="tag">Multi-agent Systems</span>
+                                <span class="tag">Simulation Models</span>
+                                <span class="tag">Complex Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="interest-content">
+                            <h3>Organizational Behavior & Innovation Management</h3>
+                            <p>Researching interpersonal interactions, leadership development, and innovative behavior in organizations, exploring innovation strategies in the context of digital transformation.</p>
+                            <div class="tags">
+                                <span class="tag">Organizational Behavior</span>
+                                <span class="tag">Innovation Strategy</span>
+                                <span class="tag">Leadership Studies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-container">
+                    <h3 class="skills-title">Skills & Tools</h3>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <span class="skill-name">Data Analysis</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Simulation Modeling</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Computational Social Science Methods</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AI Applications</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="publications" class="section">
+                <h2 class="section-title">Publications <span class="title-decoration"></span></h2>
+                <div class="publications-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="2024">2024</button>
+                    <button class="filter-btn" data-filter="2023">2023</button>
+                    <button class="filter-btn" data-filter="conference">Conference</button>
+                    <button class="filter-btn" data-filter="journal">Journal</button>
+                </div>
+                
+                <div class="publications-container">
+                    <div class="publication-item" data-year="2024" data-type="conference">
+                        <div class="publication-year">2024</div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">
+                                <a href="#" target="_blank">AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios</a>
+                                <span class="paper-badge">Preprint</span>
+                            </h3>
+                            <p class="publication-authors">
+                                <span class="author self">Bruce Liang*</span>, Jingcong Liang*, Jiayu Lin*, Xinnong Zhang*, Xiawei Liu, Shiyue Yang, Rong Ye, Lei Chen, Haoyu Kuang, Xuanjing Huang, Zhongyu Wei.
+                            </p>
+                            <div class="publication-links">
+                                <a href="#" class="pub-link" title="PDF"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="pub-link" title="Code"><i class="fas fa-code"></i> Code</a>
+                                <a href="#" class="pub-link" title="Dataset"><i class="fas fa-database"></i> Dataset</a>
+                                <a href="#" class="pub-link" title="Demo"><i class="fas fa-play-circle"></i> Demo</a>
+                                <button class="abstract-toggle"><i class="fas fa-chevron-down"></i> Abstract</button>
+                            </div>
+                            <div class="publication-abstract hidden">
+                                <p>This paper presents a benchmarking framework for evaluating the social intelligence of language agents through interactive scenarios. The main contributions include designing a series of interactive scenarios, establishing multi-dimensional evaluation metrics, and analyzing the capabilities and limitations of current language models in terms of social intelligence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-item" data-year="2024" data-type="conference">
+                        <div class="publication-year">2024</div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">
+                                <a href="#" target="_blank">Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation</a>
+                                <span class="paper-badge">ACL-Findings</span>
+                            </h3>
+                            <p class="publication-authors">
+                                <span class="author self">Bruce Liang</span>, Zhongyu Wei, Xuanjing Huang.
+                            </p>
+                            <div class="publication-links">
+                                <a href="#" class="pub-link" title="PDF"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="pub-link" title="Code"><i class="fas fa-code"></i> Code</a>
+                                <button class="abstract-toggle"><i class="fas fa-chevron-down"></i> Abstract</button>
+                            </div>
+                            <div class="publication-abstract hidden">
+                                <p>This research explores agent-based methods for large-scale social movement simulation, proposing a new framework to reveal the truth in social movements and facilitate change. We built a multi-agent system capable of simulating large-scale social interactions and information dissemination processes, providing a new computational approach to understanding social dynamics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-item" data-year="2023" data-type="journal">
+                        <div class="publication-year">2023</div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">
+                                <a href="#" target="_blank">Exploring Applications and Ethical Challenges of Large Language Models in Social Science Research</a>
+                                <span class="paper-badge">Journal</span>
+                            </h3>
+                            <p class="publication-authors">
+                                <span class="author self">Bruce Liang</span>, Someone Else, Another Author.
+                            </p>
+                            <div class="publication-links">
+                                <a href="#" class="pub-link" title="PDF"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <button class="abstract-toggle"><i class="fas fa-chevron-down"></i> Abstract</button>
+                            </div>
+                            <div class="publication-abstract hidden">
+                                <p>This paper provides a comprehensive analysis of the application prospects of large language models in social science research, while deeply exploring related ethical challenges and solutions. The study points out the potential of language models in analyzing social phenomena, simulating human behavior, and assisting in theory construction, and proposes methods to mitigate potential biases and ensure research ethics.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="citation-info">
+                    <p class="note">* indicates equal contributions</p>
+                </div>
+            </section>
+            
+            <section id="projects" class="section">
+                <h2 class="section-title">Projects <span class="title-decoration"></span></h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-sitemap project-icon"></i>
+                            <h3>Organizational Behavior Simulation System</h3>
+                        </div>
+                        <p class="project-desc">A multi-agent based organizational behavior simulation system that models the impact of different leadership styles and organizational structures on innovative behavior.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Multi-agent</span>
+                            <span class="tech-tag">Simulation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Repository</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-comments project-icon"></i>
+                            <h3>Social Network Analysis Platform</h3>
+                        </div>
+                        <p class="project-desc">An analysis platform for organizational internal social networks that visualizes key figure influence and information flow pathways.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Network Analysis</span>
+                            <span class="tech-tag">Data Visualization</span>
+                            <span class="tech-tag">Graph Algorithms</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-drone project-icon"></i>
+                            <h3>Aerial Photography Collection</h3>
+                        </div>
+                        <p class="project-desc">A personal drone photography portfolio documenting natural landscapes and urban scenes across China, utilizing video editing techniques to present unique perspectives.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Drone Photography</span>
+                            <span class="tech-tag">Photography</span>
+                            <span class="tech-tag">Video Editing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-image"></i> Portfolio</a>
+                            <a href="#" class="project-link"><i class="fab fa-youtube"></i> Videos</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <footer class="footer">
+                <p>&copy; 2024 Bruce Liang. All rights reserved.</p>
+                <p class="footer-note">This website is built with <a href="https://html5up.net/" target="_blank">HTML5</a> and <a href="https://fontawesome.com/" target="_blank">Font Awesome</a></p>
+                <p class="update-time">Last updated: <span id="last-update"></span></p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
